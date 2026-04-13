@@ -1,0 +1,57 @@
+owner: lectico
+repo: status
+
+sites:
+  - name: API (api.lectico.com)
+    url: https://api.lectico.com/v1/health
+    expectedStatusCodes:
+      - 200
+  - name: Widget CDN (cdn.lectico.com)
+    url: https://cdn.lectico.com/widget/v1/widget.js
+    expectedStatusCodes:
+      - 200
+      - 304
+  - name: Admin Panel (app.lectico.com)
+    url: https://app.lectico.com
+    expectedStatusCodes:
+      - 200
+      - 401
+  - name: Marketing (lectico.com)
+    url: https://lectico.com
+    expectedStatusCodes:
+      - 200
+  - name: Documentation (docs.lectico.com)
+    url: https://docs.lectico.com
+    expectedStatusCodes:
+      - 200
+      - 503
+  - name: Supabase REST (api gateway)
+    url: https://byoxaihkwsjhrwbltjzb.supabase.co/rest/v1/
+    expectedStatusCodes:
+      - 200
+      - 401
+
+status-website:
+  cname: status.lectico.com
+  baseUrl: /
+  name: Lectico Status
+  introTitle: "**Lectico Status**"
+  introMessage: Real-time uptime and incident history for the Lectico platform. Checks run every 5 minutes from GitHub Actions.
+  navbar:
+    - title: Status
+      href: /
+    - title: GitHub
+      href: https://github.com/lectico/status
+
+assignees:
+  - orincon0506
+
+i18n:
+  activeIncidents: Incidentes activos
+  allSystemsOperational: Todos los sistemas operativos
+  incidentReport: Informe de incidente
+  pastIncidents: Incidentes pasados
+  resolvedIncidents: Incidentes resueltos
+  upLabel: Operativo
+  downLabel: Caido
+  degradedLabel: Degradado
