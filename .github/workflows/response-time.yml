@@ -1,14 +1,11 @@
 name: Response Time CI
-
-# DISABLED automatic triggers until GH_PAT secret is configured.
 on:
-  # schedule:
-  #   - cron: "0 0 * * *"
+  schedule:
+    - cron: "0 0 * * *"
   repository_dispatch:
     types:
       - response_time
   workflow_dispatch:
-
 jobs:
   release:
     runs-on: ubuntu-latest

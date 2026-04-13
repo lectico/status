@@ -1,21 +1,18 @@
 name: Static Site CI
-
-# DISABLED automatic triggers until GH_PAT secret is configured.
 on:
-  # schedule:
-  #   - cron: "0 1 * * *"
+  schedule:
+    - cron: "0 1 * * *"
   repository_dispatch:
     types:
       - static_site
   workflow_dispatch:
-  # push:
-  #   branches:
-  #     - master
-  #     - main
-  #   paths:
-  #     - "history/**"
-  #     - ".upptimerc.yml"
-
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "history/**"
+      - ".upptimerc.yml"
 jobs:
   release:
     runs-on: ubuntu-latest
