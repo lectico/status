@@ -8,13 +8,13 @@ Real-time uptime and incident history for the [Lectico](https://lectico.com) pla
 
 ## Monitored endpoints
 
-| Service | URL |
-|---------|-----|
-| API | `https://api.lectico.com/v1/health` |
-| Widget CDN | `https://cdn.lectico.com/widget/v1/widget.js` |
-| Admin Panel | `https://app.lectico.com` |
-| Marketing | `https://lectico.com` |
-| Documentation | `https://docs.lectico.com` |
+| Service       | URL                                                 |
+| ------------- | --------------------------------------------------- |
+| API           | `https://api.lectico.com/v1/health`                 |
+| Widget CDN    | `https://cdn.lectico.com/widget/v1/widget.js`       |
+| Admin Panel   | `https://app.lectico.com`                           |
+| Marketing     | `https://lectico.com`                               |
+| Documentation | `https://docs.lectico.com`                          |
 | Supabase REST | `https://byoxaihkwsjhrwbltjzb.supabase.co/rest/v1/` |
 
 ## Setup (post-creation)
