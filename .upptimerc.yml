@@ -6,8 +6,8 @@ sites:
     url: https://api.lectico.com/v1/health
     expectedStatusCodes:
       - 200
-  - name: Widget CDN (cdn.lectico.com)
-    url: https://cdn.lectico.com/widget/v1/widget.js
+  - name: Widget (Lectico Storage)
+    url: https://api.lectico.com/storage/v1/object/public/widget/v1/tutor-ia-widget.js
     expectedStatusCodes:
       - 200
       - 304
