@@ -6,7 +6,7 @@ sites:
     url: https://api.lectico.com/v1/health
     expectedStatusCodes:
       - 200
-  - name: Widget (Lectico Storage)
+  - name: Widget
     url: https://api.lectico.com/storage/v1/object/public/widget/v1/tutor-ia-widget.js
     expectedStatusCodes:
       - 200
@@ -25,11 +25,6 @@ sites:
     expectedStatusCodes:
       - 200
       - 503
-  - name: Supabase REST (api gateway)
-    url: https://byoxaihkwsjhrwbltjzb.supabase.co/rest/v1/
-    expectedStatusCodes:
-      - 200
-      - 401
 
 status-website:
   cname: status.lectico.com
